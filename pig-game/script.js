@@ -72,7 +72,7 @@ holdDiceBtn.addEventListener('click', function() {
     // Add to total score of active user
     totalScores[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent = totalScores[activePlayer];
-    if (totalScores[activePlayer] >= 20) {
+    if (totalScores[activePlayer] >= 100) {
         // If totalScore > 100, declare the user as winner and end game
         document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
